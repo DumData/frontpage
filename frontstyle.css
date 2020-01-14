@@ -1,5 +1,63 @@
 body {
     margin: 0;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.title_box {
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.title {
+    font-size: 10em;
+}
+
+.content {
+    flex: 1;
+    align-items: stretch;
+
+}
+
+.feature_box {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.feature_row {
+    display: flex;
+    flex: 1;
+}
+.box {
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    flex: 1;
+    padding:50px;
+}
+
+.contact {
+    color: white;
+    font-family: Arial;
+}
+
+.contact a:link {
+    color: lightgreen;
+}
+
+.contact a:hover {
+    color: rgb(0,255,0);
+}
