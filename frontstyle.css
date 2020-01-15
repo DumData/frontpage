@@ -3,6 +3,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: Arial, sans-serif;
 }
 
 .row {
@@ -15,7 +16,6 @@ body {
 .title_box {
     color: white;
     text-align: center;
-    font-family: Arial;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -29,7 +29,6 @@ body {
 .content {
     flex: 1;
     align-items: stretch;
-
 }
 
 .feature_box {
@@ -40,18 +39,42 @@ body {
 .feature_row {
     display: flex;
     flex: 1;
+    flex-wrap: wrap;
 }
 .box {
-    color: white;
     border: 2px solid white;
     border-radius: 15px;
     flex: 1;
-    padding:50px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+}
+
+.box_title {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    padding-top: 0.5em;
+}
+
+.box_content {
+    color: lightgray;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    line-height: 1.5;
+}
+
+.box_content b {
+    color: white;
+}
+
+.box_content .subtitle {
+    font-size: 1.3em;
 }
 
 .contact {
     color: white;
-    font-family: Arial;
 }
 
 .contact a:link {
