@@ -19,9 +19,9 @@
                 <div class="box">
                     <div class="box_title">Goodbye Excel</div>
                     <div class="box_content">
-                        <p class="subtitle">Why you shouldn't use spreadsheets for data management and analysis:</p>
+                        <p class="subtitle">Stop using spreadsheets for data management and analysis!</p>
                         <ol>
-                            <li><b>No input control!</b><br>&lt;bad user&gt; "I like to write dates my own way and convey information via <p style="display: inline; background-color: yellow; color: black; padding-left: 5px; padding-right: 5px;">color</p>"<br><br></li>
+                            <li><b>No input control!</b><br>"bad user": "I like to write dates my own way and convey information via <p style="display: inline; background-color: yellow; color: black; padding-left: 5px; padding-right: 5px;">color</p>"<br><br></li>
                             <li><b>No version control!</b><br>Did someone accidentally change this value? Who? When? Why?<br><br></li>
                             <li><b>Poor scalability</b><br>Not usable by multiple simultaneous users</li>
                         </ol>
@@ -62,17 +62,26 @@
         </div>
     </div>
     <div class="row"><div class="contact">Contact us at: <a href="mailto:hello@dumdata.com">hello@dumdata.com</a></div></div>
-    <script src="three.r92.min.js"></script>
-    <script src="vanta.birds.min.js"></script>
+    <script src="three.min.js"></script>
+    <script src="vanta.net.min.js"></script>
     <script>
-        VANTA.BIRDS({
+        /*VANTA.BIRDS({
             el: "#back",
             birdSize: 3.00,
             separation: 74.00,
             alignment: 81.00,
             cohesion: 88.00,
             quantity: 2.00
-        })
+        })*/
+		VANTA.NET({
+			el: "#back",
+			mouseControls: true,
+			touchControls: true,
+			minHeight: 200.00,
+			minWidth: 200.00,
+			scale: 1.00,
+			scaleMobile: 1.00
+		})
     </script>
 </body>
 </html>
